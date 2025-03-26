@@ -37,6 +37,7 @@ public class FacebookLogin {
     driver.findElement(By.id("pass")).sendKeys("password");
     driver.findElement(By.id("pass")).click();
     driver.findElement(By.id("pass")).sendKeys(Keys.ENTER);
+    Thread.sleep(5000);//Add sleep to see the login result
   }
 
   @AfterClass(alwaysRun = true)
