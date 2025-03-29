@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [First Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ChromeSpecificTests(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="unittest.MultipleBrowserTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="runInBrowser"/>
+        </methods>
+      </class> <!-- unittest.MultipleBrowserTest -->
+    </classes>
+  </test> <!-- ChromeSpecificTests(failed) -->
+  <test thread-count="5" name="EdgeSpecificTests(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="unittest.MultipleBrowserTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="runInBrowser"/>
+        </methods>
+      </class> <!-- unittest.MultipleBrowserTest -->
+    </classes>
+  </test> <!-- EdgeSpecificTests(failed) -->
+</suite> <!-- Failed suite [First Suite] -->

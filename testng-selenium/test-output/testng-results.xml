@@ -2,38 +2,54 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-29T09:24:39Z" name="First Suite" finished-at="2025-03-29T09:25:15Z" duration-ms="36803">
+  <suite started-at="2025-03-29T15:09:15Z" name="First Suite" finished-at="2025-03-29T15:09:48Z" duration-ms="32531">
     <groups>
     </groups>
-    <test started-at="2025-03-29T09:24:39Z" name="com-example-tests" finished-at="2025-03-29T09:25:15Z" duration-ms="36803">
-      <class name="com.example.GGSearch">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.GGSearch@48aaecc3]" started-at="2025-03-29T09:25:01Z" name="setUp" finished-at="2025-03-29T09:25:06Z" duration-ms="5165" status="PASS">
+    <test started-at="2025-03-29T15:09:15Z" name="ChromeSpecificTests" finished-at="2025-03-29T15:09:32Z" duration-ms="17029">
+      <class name="unittest.MultipleBrowserTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:unittest.MultipleBrowserTest@75329a49]" started-at="2025-03-29T15:09:15Z" name="setUp" finished-at="2025-03-29T15:09:26Z" duration-ms="10392" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testGGSearch()[pri:0, instance:com.example.GGSearch@48aaecc3]" started-at="2025-03-29T09:25:06Z" name="testGGSearch" finished-at="2025-03-29T09:25:13Z" duration-ms="7439" status="PASS">
+        <test-method signature="runInBrowser()[pri:0, instance:unittest.MultipleBrowserTest@75329a49]" started-at="2025-03-29T15:09:26Z" name="runInBrowser" finished-at="2025-03-29T15:09:31Z" duration-ms="4969" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGGSearch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.GGSearch@48aaecc3]" started-at="2025-03-29T09:25:13Z" name="tearDown" finished-at="2025-03-29T09:25:15Z" duration-ms="2008" status="PASS">
+        </test-method> <!-- runInBrowser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:unittest.MultipleBrowserTest@75329a49]" started-at="2025-03-29T15:09:31Z" name="tearDown" finished-at="2025-03-29T15:09:32Z" duration-ms="1577" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.example.GGSearch -->
-      <class name="com.example.FacebookLogin">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.FacebookLogin@60d8c9b7]" started-at="2025-03-29T09:24:39Z" name="setUp" finished-at="2025-03-29T09:24:47Z" duration-ms="8058" status="PASS">
+      </class> <!-- unittest.MultipleBrowserTest -->
+    </test> <!-- ChromeSpecificTests -->
+    <test started-at="2025-03-29T15:09:33Z" name="EdgeSpecificTests" finished-at="2025-03-29T15:09:48Z" duration-ms="15368">
+      <class name="unittest.MultipleBrowserTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:unittest.MultipleBrowserTest@ef9296d]" started-at="2025-03-29T15:09:33Z" name="setUp" finished-at="2025-03-29T15:09:38Z" duration-ms="5038" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testFacebookLogin()[pri:0, instance:com.example.FacebookLogin@60d8c9b7]" started-at="2025-03-29T09:24:47Z" name="testFacebookLogin" finished-at="2025-03-29T09:24:58Z" duration-ms="11641" status="PASS">
+        <test-method signature="runInBrowser()[pri:0, instance:unittest.MultipleBrowserTest@ef9296d]" started-at="2025-03-29T15:09:38Z" name="runInBrowser" finished-at="2025-03-29T15:09:44Z" duration-ms="6519" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFacebookLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.FacebookLogin@60d8c9b7]" started-at="2025-03-29T09:24:58Z" name="tearDown" finished-at="2025-03-29T09:25:01Z" duration-ms="2397" status="PASS">
+        </test-method> <!-- runInBrowser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:unittest.MultipleBrowserTest@ef9296d]" started-at="2025-03-29T15:09:44Z" name="tearDown" finished-at="2025-03-29T15:09:48Z" duration-ms="3782" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.example.FacebookLogin -->
-    </test> <!-- com-example-tests -->
+      </class> <!-- unittest.MultipleBrowserTest -->
+    </test> <!-- EdgeSpecificTests -->
   </suite> <!-- First Suite -->
 </testng-results>

@@ -1,8 +1,25 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="First Suite" verbose="1">
+<suite name="First Suite" verbose="1" thread-count="5">
+	<!-- 
 	<test name="com-example-tests">
 		<packages>
 			<package name="com.example"></package>
 		</packages>
 	</test>
+	-->
+	
+	<test name="ChromeSpecificTests">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="unittest.MultipleBrowserTest"/>
+        </classes>
+    </test>
+
+    <test name="EdgeSpecificTests">
+        <parameter name="browser" value="Edge"/>
+        <classes>
+            <class name="unittest.MultipleBrowserTest"/>
+        </classes>
+    </test>
+		
 </suite>
